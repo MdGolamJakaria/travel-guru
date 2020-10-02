@@ -1,0 +1,27 @@
+.home-content{
+    margin-top: 100px;
+}
+.btn-booking{
+    background: #F9A51A;
+    border: none;
+    padding: 5px 20px;
+}
+#cox-bazar{
+    background-image: url("../../travel-guru-master/Image/Sajek.png");
+}
+#sreemangle{
+    background-image: url("../../travel-guru-master/Image/Sreemongol.png");
+}
+#sundarbans{
+    background-image: url("../../travel-guru-master/Image/sundorbon.png")
+}
+.card-box{    
+    padding-top:200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    color:white;
+    font-weight: bold;
+    
+}
