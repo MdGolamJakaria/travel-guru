@@ -10,7 +10,7 @@ const Header = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <Link className="navbar-brand" to="/home">
-                    <img className="logo" src={logo} alt="" srcset="" />
+                    <img className="logo" src={logo} alt="" />
                 </Link>
 
                 {/* <form className="form-inline my-2 my-lg-0">

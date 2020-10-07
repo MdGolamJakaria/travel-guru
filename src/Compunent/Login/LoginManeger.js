@@ -13,6 +13,7 @@ export const handleGoogleSignIn = () => {
     return firebase.auth().signInWithPopup(googleProvider)
         .then(res => {
             const { displayName, photoURL, email } = res.user;
+
             const signedInUser = {
                 isSignedIn: true,
                 name: displayName,
@@ -26,4 +27,20 @@ export const handleGoogleSignIn = () => {
             console.log(err);
             console.log(err.message);
         })
+}
+
+export const signInWithInEmailAndPassword = (email, password) => {
+    return firebase.auth().signInWithEmailAndPassword(email, password)
+        .then(res => {
+            const newUserInfo = res.user;
+            newUserInfo.error = '';
+            newUserInfo.success = true;
+            return newUserInfo;
+        })
+        .catch(function (error) {
+            const newUserInfo = {};
+            newUserInfo.error = error.message;
+            newUserInfo.success = false;
+            return newUserInfo
+        });
 }
