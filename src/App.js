@@ -24,6 +24,7 @@ import motel1 from './travel-guru-master/Image/Rectangle 1.png'
 import motel2 from './travel-guru-master/Image/Rectangle 26.png'
 import motel3 from './travel-guru-master/Image/Rectangle 27.png'
 import coxBazar from './travel-guru-master/Image/Sajek.png'
+import Footer from './Compunent/footer/Footer';
 
 export const UserContext = createContext();
 export const newUserContext = createContext();
