@@ -82,9 +82,6 @@ const Login = () => {
         e.preventDefault();
 
     }
-    console.log(user)
-
-
     return (
         <div>
             {

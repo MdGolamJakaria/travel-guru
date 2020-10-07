@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { homeDataContext } from '../../App';
 import FromCelender from '../Celender/FromCelender';
 import ToCelender from '../Celender/ToCelender';
 import './Booking.css'
 const Booking = () => {
-
+    const [homeData, setHomeData] = useContext(homeDataContext)
     return (
         <div className='container'>
             <div className="row home-content">
                 <div className="col-md-6">
-                    <h1>COX'S BAZAR</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis nobis voluptates beatae optio voluptate. Laudantium ut eos consequuntur magni.</p>
+                    <h1 className='text-uppercase'>{homeData.location}</h1>
+                    <p>{homeData.description}</p>
                 </div>
                 <div className="col-md-6">
                     <div className='row'>
@@ -22,7 +23,7 @@ const Booking = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <p>Destination</p>
-                            <h5>Cox's Bazar</h5>
+                            <h5 className='text-capitalize'>{homeData.location}</h5>
                         </div>
                     </div>
                     <div className="row">

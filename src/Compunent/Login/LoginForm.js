@@ -33,7 +33,7 @@ const LoginForm = (props) => {
                                     <Checkbox color="primary" inputProps={{ 'aria-label': 'secondary checkbox' }} /><p>Remember me</p>
                                 </div>
                                 <div className="col-md-3">
-                                    <Link><p>Forgot Password</p></Link>
+                                    <Link to="/forgotPassword"><p>Forgot Password</p></Link>
                                 </div>
                             </div>
                             <input type="submit" value="Login" />
