@@ -137,9 +137,9 @@ function App() {
               <PrivatRoute path='/account'>
                 <Account></Account>
               </PrivatRoute>
-              <Route path='/room'>
+              <PrivatRoute path='/room'>
                 <Room></Room>
-              </Route>
+              </PrivatRoute>
               <Route path='/'>
                 <Home></Home>
               </Route>
